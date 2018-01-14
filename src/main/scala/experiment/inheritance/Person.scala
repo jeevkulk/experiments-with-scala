@@ -1,18 +1,18 @@
 package experiment.inheritance
 
-case class Person(firstName : String, lastName : String = "", city : String = "", age : Int = 0, personType : String)
+class Person(firstName : String, lastName : String = "", city : String = "", age : Int = 0, personType : String)
 
-case class Doctor(override val firstName : String, override val personType : String = "DOCTOR")
-        extends Person(firstName : String, personType = String)
+class Doctor(val firstName : String, val personType : String = "DOCTOR")
+        extends Person(firstName : String, personType = "DOCTOR")
 
-case class Teacher(override val firstName : String, override val personType : String = "TEACHER")
-        extends Person(firstName : String, personType = String)
+class Teacher(val firstName : String, val personType : String = "TEACHER")
+        extends Person(firstName : String, personType = "TEACHER")
 
-case class Engineer(override val firstName : String, override val personType : String = "ENGINEER")
-        extends Person(firstName : String, personType = String)
+class Engineer(val firstName : String, val personType : String = "ENGINEER")
+        extends Person(firstName : String, personType = "ENGINEER")
 
-case class Sportsman(override val firstName : String, override val personType : String = "SPORTSMAN")
-        extends Person(firstName : String, personType = String)
+class Sportsman(val firstName : String, val personType : String = "SPORTSMAN")
+        extends Person(firstName : String, personType = "SPORTSMAN")
 
 /*
 case class DoctorTeacher(override val firstName : String, override val personType : String = "DOCTOR-TEACHER")
