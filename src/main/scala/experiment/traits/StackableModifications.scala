@@ -16,11 +16,11 @@ object StackableModifications {
         println("*** BasicIntQueue with Doubling with Incrementing ***")
         queue2.printArray()
 
-        val queue3 = new BasicIntQueue with Filtering with Doubling with Incrementing
+        val queue3 = new BasicIntQueue with Filtering with Incrementing with Doubling
         queue3.put(-5)
         queue3.put(10)
         queue3.put(100)
-        println("*** BasicIntQueue with Filtering with Doubling with Incrementing ***")
+        println("*** BasicIntQueue with Filtering with Incrementing with Doubling ***")
         queue3.printArray()
     }
 }
