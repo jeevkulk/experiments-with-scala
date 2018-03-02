@@ -2,7 +2,7 @@ package experiment.traits
 
 import scala.collection.mutable.ArrayBuffer
 
-object ScalableTraits {
+object StackableModifications {
     def main(args : Array[String]): Unit = {
         val queue1 = new BasicIntQueue
         queue1.put(10)
