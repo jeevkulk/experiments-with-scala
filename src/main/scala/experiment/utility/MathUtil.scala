@@ -1,7 +1,7 @@
 package experiment.utility
 
 object MathUtil {
-    def main (args : Array[String]): Unit = {
+    def main(args : Array[String]): Unit = {
         println(new MathUtil().gcd(42, 24))
     }
 }

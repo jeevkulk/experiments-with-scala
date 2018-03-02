@@ -2,7 +2,7 @@ package experiment.utility
 
 object RationalNumber {
     def main (args : Array[String]): Unit = {
-        var a = new RationalNumber(5, 9)
+        var a = new RationalNumber(5, 6)
         println(a add (5, 9))
     }
 }
